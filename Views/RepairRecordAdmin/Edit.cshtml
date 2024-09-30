@@ -1,0 +1,83 @@
+@model CarService.Models.RepairRecord
+
+@{
+ViewData["Title"] = "Редагувати Запис Ремонту";
+}
+
+<h1>Редагувати Запис Ремонту</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="Id"/>
+
+            <div class="form-group">
+                <label asp-for="ScheduledDate" class="control-label">Дата запланованого ремонту:</label>
+                <input asp-for="ScheduledDate" class="form-control" type="date"/>
+                <span asp-validation-for="ScheduledDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Status" class="control-label">Статус ремонту:</label>
+                <div class="input-group">
+                    <select asp-for="Status" asp-items="ViewBag.Statuses" class="form-control"></select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </div>
+                </div>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="RepairDescription" class="control-label">Опис ремонту:</label>
+                <textarea asp-for="RepairDescription" class="form-control"></textarea>
+                <span asp-validation-for="RepairDescription" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Cost" class="control-label">Вартість ремонту:</label>
+                <input asp-for="Cost" class="form-control" type="number" step="0.01" id="cost-input" />
+                <span asp-validation-for="Cost" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CarId" class="control-label">Автомобіль:</label>
+                <div class="input-group">
+                    <select asp-for="CarId" asp-items="ViewBag.Cars" class="form-control"></select>
+                    <span asp-validation-for="CarId" class="text-danger"></span>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </div>
+                </div>
+                <span asp-validation-for="CarId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MasterId" class="control-label">Майстер:</label>
+                <div class="input-group">
+                    <select asp-for="MasterId" asp-items="ViewBag.Masters" class="form-control"></select>
+                    <span asp-validation-for="MasterId" class="text-danger"></span>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </div>
+                </div>
+                <span asp-validation-for="MasterId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Зберегти" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+</div>

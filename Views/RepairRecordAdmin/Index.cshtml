@@ -1,0 +1,53 @@
+@model IEnumerable<CarService.Models.RepairRecord>
+
+@{
+    ViewData["Title"] = "Записи про ремонт";
+}
+
+<h1>Записи про ремонт</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">
+        <i class="bi bi-plus-circle"></i> Створити Нового
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Дата</th>
+        <th>Статус</th>
+        <th>Опис</th>
+        <th>Ціна</th>
+        <th>Автомобіль</th>
+        <th>Номер</th>
+        <th>Майстер</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var record in Model)
+    {
+        <tr>
+            <td>@record.ScheduledDate.ToShortDateString()</td>
+            <td>@record.Status</td>
+            <td>@record.RepairDescription</td>
+            <td>@record.Cost.ToString("C")</td>
+            <td>@record.Car?.Make @record.Car?.Model</td>
+            <td>@record.Car?.Number</td>
+            <td>@record.Master?.Surname @record.Master?.Name (@record.Master?.Specialization)</td>
+            <td style="min-width: 180px;">
+                 <a asp-action="Edit" asp-route-id="@record.Id" class="btn btn-warning">
+                    <i class="bi bi-pencil-square"></i>
+                </a> |
+                <a asp-action="Details" asp-route-id="@record.Id" class="btn btn-info">
+                    <i class="bi bi-info-circle"></i>
+                </a> |
+                <a asp-action="Delete" asp-route-id="@record.Id" class="btn btn-danger">
+                    <i class="bi bi-trash"></i>
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

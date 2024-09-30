@@ -1,0 +1,83 @@
+@model object
+
+@{
+ViewBag.Title = "Головна сторінка адміністратора";
+}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="display-4">Ласкаво просимо до панелі адміністратора!</h1>
+    <p class="lead">
+        Тут ви можете керувати всіма основними елементами системи, включаючи автомобілі, користувачів, замовлення та сервіси.
+    </p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Користувачі</div>
+                <div class="card-body">
+                    <h5 class="card-title">Управління користувачами</h5>
+                    <p class="card-text">Додавайте, редагуйте або видаляйте користувачів системи.</p>
+                    <a href="@Url.Action("Index", "UserAdmin")" class="btn btn-light">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Автомобілі</div>
+                <div class="card-body">
+                    <h5 class="card-title">Управління автомобілями</h5>
+                    <p class="card-text">Змінюйте та переглядайте інформацію про автомобілі.</p>
+                    <a href="@Url.Action("Index", "CarAdmin")" class="btn btn-light">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Записи про ремонт</div>
+                <div class="card-body">
+                    <h5 class="card-title">Управління записами про ренмонт</h5>
+                    <p class="card-text">Переглядайте та обробляйте записи про ремонт на сервіс.</p>
+                    <a href="@Url.Action("Index", "RepairRecordAdmin")" class="btn btn-light">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-header">Майстри</div>
+                <div class="card-body">
+                    <h5 class="card-title">Управління майстрами</h5>
+                    <p class="card-text">Керуйте інформацією про майстрів на автосервісі.</p>
+                    <a href="@Url.Action("Index", "MasterAdmin")" class="btn btn-light">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+<style>
+    .nav-link:hover {
+        color: #ff9393 !important;
+    }
+</style>
+

@@ -1,0 +1,36 @@
+@model CarService.Models.RepairRecord
+
+@{
+ViewData["Title"] = "Деталі Запису Ремонту";
+}
+
+<h1>Деталі Запису Ремонту</h1>
+
+<div>
+    <h4>Запис Ремонту</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Дата</dt>
+        <dd class="col-sm-10">@Model.ScheduledDate.ToShortDateString()</dd>
+
+        <dt class="col-sm-2">Статус</dt>
+        <dd class="col-sm-10">@Model.Status</dd>
+
+        <dt class="col-sm-2">Опис Ремонту</dt>
+        <dd class="col-sm-10">@Model.RepairDescription</dd>
+
+        <dt class="col-sm-2">Вартість</dt>
+        <dd class="col-sm-10">@Model.Cost.ToString("C")</dd>
+
+        <dt class="col-sm-2">Автомобіль</dt>
+        <dd class="col-sm-10">@Model.Car?.Make @Model.Car?.Model</dd>
+
+        <dt class="col-sm-2">Майстер</dt>
+        <dd class="col-sm-10">@Model.Master?.Name @Model.Master?.Surname (@Model.Master?.Specialization)</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Редагувати</a>
+    <a asp-action="Index" class="btn btn-primary">Назад</a>
+</div>

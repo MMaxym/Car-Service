@@ -1,0 +1,77 @@
+@model CarService.Models.RepairRecord
+
+@{
+Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Головна сторінка Майстра</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/CarService.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header style="margin-bottom: 30px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center" style="margin-right: 20px; margin-left: 80px;">
+                <i class="fas fa-user-circle fa-2x" style="color: #ffc107; margin-right: 5px;"></i>
+                <span style="color: #ffc107; font-size: 24px;">@User.Identity?.Name</span>
+            </div>
+            <a class="navbar-brand" style="color: #74bbd5; margin-left: 350px; font-size: 28px;">Головна сторінка Майстра</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger text-white" style="margin-left: 15px; margin-right: 60px;" href="@Url.Action("Login", "Account")">
+                            <i class="fas fa-sign-out-alt"></i> Вийти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<h1 style="justify-content: center; text-align: center; margin-bottom: 30px;">Редагування запису про ремонт</h1>
+
+<div class="row" style="justify-content: center;">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="Status" class="control-label">Статус ремонту:</label>
+                <div class="input-group">
+                    <select asp-for="Status" asp-items="ViewBag.Statuses" class="form-control"></select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                    <div class="input-group-append">
+                <span class="input-group-text">
+                    <i class="bi bi-chevron-down"></i>
+                </span>
+                    </div>
+                </div>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Зберегти" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-secondary">Назад</a>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

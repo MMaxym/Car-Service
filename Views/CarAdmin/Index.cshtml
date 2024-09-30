@@ -1,0 +1,54 @@
+@model IEnumerable<CarService.Models.Car>
+
+@{
+    ViewData["Title"] = "Автомобілі";
+}
+
+
+<h1>Автомобілі</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">
+        <i class="bi bi-plus-circle"></i> Створити Новий
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Марка</th>
+        <th>Модель</th>
+        <th>Рік</th>
+        <th>Номер</th>
+        <th>VIN</th>
+        <th>Пробіг</th>
+        <th>Власник</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var car in Model)
+    {
+        <tr>
+            <td>@car.Make</td>
+            <td>@car.Model</td>
+            <td>@car.Year</td>
+            <td>@car.Number</td>
+            <td>@car.Vin</td>
+            <td>@car.Mileage</td>
+            <td>@car.User?.UserName</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning">
+                <i class="bi bi-pencil-square"></i>
+                </a> |
+                <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info">
+                    <i class="bi bi-info-circle"></i>
+                </a> |
+                <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger">
+                    <i class="bi bi-trash"></i>
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

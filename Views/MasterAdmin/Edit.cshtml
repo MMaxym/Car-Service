@@ -1,0 +1,87 @@
+@model CarService.Models.Master
+
+@{
+    ViewData["Title"] = "Редагування майстра";
+}
+
+<h1>Редагування майстра</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"> Логін</label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Імʼя</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Surname" class="control-label">Прізвище</label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Specialization" class="control-label">Спеціальність</label>
+                <div class="input-group">
+                    <select asp-for="Specialization" class="form-control">
+                        <option value="">-- Оберіть спеціальність --</option>
+                        <option value="Механік">Механік</option>
+                        <option value="Автоелектрик">Автоелектрик</option>
+                        <option value="Моторист">Моторист</option>
+                        <option value="Кузовщик">Кузовщик</option>
+                        <option value="Маляр">Маляр</option>
+                        <option value="Шиномонтажник">Шиномонтажник</option>
+                        <option value="Автослюсар">Автослюсар</option>
+                        <option value="Діагност">Діагност</option>
+                        <option value="Слюсар з ремонту трансмісій">Слюсар з ремонту трансмісій</option>
+                        <option value="Майстер з ремонту ходової">Майстер з ремонту ходової</option>
+                    </select>
+                    <div class="input-group-append">
+            <span class="input-group-text">
+                <i class="bi bi-chevron-down"></i>
+            </span>
+                    </div>
+                </div>
+                <span asp-validation-for="Specialization" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label">Номер телефону</label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"> Електронна пошта</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Зберегти" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Назад
+    </a>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

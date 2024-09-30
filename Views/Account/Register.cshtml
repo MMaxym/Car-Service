@@ -1,0 +1,79 @@
+    @model CarService.Models.RegisterViewModel
+
+    @{
+    Layout = null;
+    }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #dddddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            width: 400px;
+            margin: 50px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-link {
+            text-decoration: none;
+            color: #ff8100;
+        }
+        .btn-link:hover {
+            color: #ff0000;
+        }
+    </style>
+    
+    <div class="form-container">
+        <h2>Реєстрація</h2>
+
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName">Логін</label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Електронна пошта</label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Пароль</label>
+                <input asp-for="Password" class="form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword">Підтвердити пароль</label>
+                <input asp-for="ConfirmPassword" class="form-control" type="password" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name">Імʼя</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Surname">Прізвище</label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-info btn-block" style="background-color: #d51c1c;">Зареєструватися</button>
+        </form>
+
+        <div class="mt-3 text-center">
+            <p>Вже маєте акаунт? <a asp-controller="Account" asp-action="Login" class="btn btn-link">Авторизуватися</a></p>
+        </div>
+    </div>

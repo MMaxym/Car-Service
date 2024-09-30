@@ -1,0 +1,195 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CarService
+build_property.RootNamespace = CarService
+build_property.ProjectDir = /Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/CarAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyQWRtaW4vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/CarAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyQWRtaW4vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/CarAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyQWRtaW4vRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/CarAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyQWRtaW4vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/CarAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/MainAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFpbkFkbWluL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Master/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Master/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Master/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/MasterAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyQWRtaW4vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/MasterAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyQWRtaW4vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/MasterAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyQWRtaW4vRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/MasterAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyQWRtaW4vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/MasterAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/RepairRecordAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwYWlyUmVjb3JkQWRtaW4vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/RepairRecordAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwYWlyUmVjb3JkQWRtaW4vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/RepairRecordAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwYWlyUmVjb3JkQWRtaW4vRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/RepairRecordAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwYWlyUmVjb3JkQWRtaW4vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/RepairRecordAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwYWlyUmVjb3JkQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/CreateCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9DcmVhdGVDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/CreateRepair.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9DcmVhdGVSZXBhaXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/DeleteCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZWxldGVDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/DetailsCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZXRhaWxzQ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/DetailsRepair.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZXRhaWxzUmVwYWlyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/EditCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9FZGl0Q2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/MyCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9NeUNhcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/MyRepairs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9NeVJlcGFpcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/User/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9TZXJ2aWNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/UserAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckFkbWluL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/UserAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckFkbWluL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/UserAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckFkbWluL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/UserAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckFkbWluL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/UserAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckFkbWluL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maxym/Documents/HPK/4_KURS/APPZ/LR1/CarService/CarService/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-v91zw3ee8h

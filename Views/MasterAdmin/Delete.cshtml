@@ -1,0 +1,38 @@
+@model CarService.Models.Master
+
+@{
+    ViewData["Title"] = "Видалення майстра";
+}
+
+<h1>Видалення майстра</h1>
+
+<h3>Ви впевнені, що хочете видалити цього майстра?</h3>
+
+<div>
+    <h4>Деталі майстра</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Логін</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.UserName)</dd>
+
+        <dt class="col-sm-2">Імʼя</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Name)</dd>
+
+        <dt class="col-sm-2">Прізвище</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Surname)</dd>
+
+        <dt class="col-sm-2">Спеціальність</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Specialization)</dd>
+
+        <dt class="col-sm-2">Номер телефона</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Видалити" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Назад
+        </a>
+    </form>
+</div>

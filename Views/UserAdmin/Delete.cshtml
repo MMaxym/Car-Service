@@ -1,0 +1,37 @@
+﻿@model CarService.Models.User
+
+@{
+ViewData["Title"] = "Видалення Клієнта";
+}
+
+<h1>Видалення Клієнта</h1>
+
+<h3>Ви впевнені, що хочете видалити цього клієнта?</h3>
+<div>
+    <h4>Деталі Клієнта</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Імʼя</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Name)</dd>
+
+        <dt class="col-sm-2">Прізвище</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Surname)</dd>
+
+        <dt class="col-sm-2">Логін</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.UserName)</dd>
+
+        <dt class="col-sm-2">Номер телефону</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+        <dt class="col-sm-2">Електронна пошта</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Email)</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <input type="submit" value="Видалити" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary">Скасувати</a>
+        </div>
+    </form>
+</div>
